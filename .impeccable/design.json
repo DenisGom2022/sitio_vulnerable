@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T16:37:59.214576+00:00",
+  "title": "Design System: Tornillo Mayor",
+  "extensions": {
+    "colorMeta": {
+      "chapa": {
+        "role": "primary",
+        "displayName": "Chapa esmaltada",
+        "canonical": "#2E4B3F",
+        "tonalRamp": [
+          "#212C27",
+          "#384F45",
+          "#4D7464",
+          "#609C83",
+          "#86B09E",
+          "#ABC4BA",
+          "#CFDBD6",
+          "#F1F4F2"
+        ]
+      },
+      "chapa-osc": {
+        "role": "primary",
+        "displayName": "Chapa en sombra",
+        "canonical": "#1C2A24",
+        "tonalRamp": [
+          "#222B27",
+          "#3A4D45",
+          "#507163",
+          "#659781",
+          "#89AC9D",
+          "#AEC2B9",
+          "#D0DAD6",
+          "#F1F3F2"
+        ]
+      },
+      "chapa-luz": {
+        "role": "primary",
+        "displayName": "Chapa con luz",
+        "canonical": "#3D5F50",
+        "tonalRamp": [
+          "#212B27",
+          "#394E45",
+          "#4F7363",
+          "#639981",
+          "#88AE9D",
+          "#ADC3B9",
+          "#D0DBD6",
+          "#F1F4F2"
+        ]
+      },
+      "chapa-fondo": {
+        "role": "primary",
+        "displayName": "Fondo de chapa",
+        "canonical": "#264036",
+        "tonalRamp": [
+          "#212C28",
+          "#375046",
+          "#4C7665",
+          "#5E9D85",
+          "#85B1A0",
+          "#ABC5BB",
+          "#CFDBD7",
+          "#F1F4F3"
+        ]
+      },
+      "pegatina": {
+        "role": "secondary",
+        "displayName": "Amarillo pegatina",
+        "canonical": "#F4C531",
+        "tonalRamp": [
+          "#3A3112",
+          "#6F5A18",
+          "#AB8716",
+          "#EEB80E",
+          "#E9C34C",
+          "#E7D089",
+          "#ECE1BF",
+          "#F8F5ED"
+        ]
+      },
+      "pegatina-osc": {
+        "role": "secondary",
+        "displayName": "Pegatina en sombra",
+        "canonical": "#D9A90F",
+        "tonalRamp": [
+          "#3A3013",
+          "#6D5919",
+          "#A88619",
+          "#EAB711",
+          "#E7C34F",
+          "#E5D08B",
+          "#EBE1BF",
+          "#F7F5ED"
+        ]
+      },
+      "pegatina-luz": {
+        "role": "secondary",
+        "displayName": "Pegatina con luz",
+        "canonical": "#FFDB5E",
+        "tonalRamp": [
+          "#3C3310",
+          "#745E13",
+          "#B38E0E",
+          "#FAC301",
+          "#F2CB44",
+          "#ECD584",
+          "#EEE3BC",
+          "#F8F5EC"
+        ]
+      },
+      "rotulador": {
+        "role": "tertiary",
+        "displayName": "Rojo rotulador",
+        "canonical": "#B3261E",
+        "tonalRamp": [
+          "#361816",
+          "#662521",
+          "#9B2C26",
+          "#D72E25",
+          "#D9635D",
+          "#DD9793",
+          "#E7C5C3",
+          "#F6EFEE"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#1C2A24",
+        "tonalRamp": [
+          "#222B27",
+          "#3A4D45",
+          "#507163",
+          "#659781",
+          "#89AC9D",
+          "#AEC2B9",
+          "#D0DAD6",
+          "#F1F3F2"
+        ]
+      },
+      "texto-suave": {
+        "role": "neutral",
+        "displayName": "Texto suave",
+        "canonical": "#4A5650",
+        "tonalRamp": [
+          "#252826",
+          "#404743",
+          "#5A6761",
+          "#74877E",
+          "#94A19B",
+          "#B4BCB8",
+          "#D3D7D5",
+          "#F2F3F2"
+        ]
+      },
+      "gris": {
+        "role": "neutral",
+        "displayName": "Gris cajonera",
+        "canonical": "#D9DCD5",
+        "tonalRamp": [
+          "#272824",
+          "#44483F",
+          "#626859",
+          "#7F8972",
+          "#9CA393",
+          "#B9BDB3",
+          "#D5D7D3",
+          "#F2F3F2"
+        ]
+      },
+      "aluminio": {
+        "role": "neutral",
+        "displayName": "Aluminio",
+        "canonical": "#C9CDC8",
+        "tonalRamp": [
+          "#262725",
+          "#424641",
+          "#5E645D",
+          "#7A8478",
+          "#989F97",
+          "#B6BAB5",
+          "#D4D6D4",
+          "#F2F3F2"
+        ]
+      },
+      "aluminio-filo": {
+        "role": "neutral",
+        "displayName": "Filo de aluminio",
+        "canonical": "#8F968F",
+        "tonalRamp": [
+          "#262726",
+          "#424542",
+          "#5E635E",
+          "#7A827A",
+          "#989E98",
+          "#B6BAB6",
+          "#D4D6D4",
+          "#F2F2F2"
+        ]
+      },
+      "tarjeta": {
+        "role": "neutral",
+        "displayName": "Cartulina",
+        "canonical": "#FBFBF7",
+        "tonalRamp": [
+          "#2E2E1F",
+          "#545433",
+          "#7C7C45",
+          "#A7A754",
+          "#B8B87E",
+          "#C9C9A7",
+          "#DDDDCD",
+          "#F4F4F0"
+        ]
+      },
+      "hueco": {
+        "role": "neutral",
+        "displayName": "Fondo de hueco",
+        "canonical": "#F6F7F2",
+        "tonalRamp": [
+          "#292C21",
+          "#4A4F38",
+          "#6C744D",
+          "#8F9B60",
+          "#A7B086",
+          "#BFC4AC",
+          "#D9DBCF",
+          "#F3F4F1"
+        ]
+      },
+      "texto-sobre-chapa": {
+        "role": "neutral",
+        "displayName": "Texto sobre chapa",
+        "canonical": "#DCE3DE",
+        "tonalRamp": [
+          "#242925",
+          "#3E4941",
+          "#576A5D",
+          "#708C78",
+          "#91A597",
+          "#B2BEB5",
+          "#D2D8D4",
+          "#F2F3F2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Rótulo grande",
+        "purpose": "Titular del frente de profesionales, en mayúsculas."
+      },
+      "headline": {
+        "displayName": "Etiqueta estrella",
+        "purpose": "Nombre del producto en el cajón grande; títulos de sección y listado."
+      },
+      "title": {
+        "displayName": "Etiqueta de cajón",
+        "purpose": "Nombre del producto en cada cajón; en mayúsculas en cajones-sección."
+      },
+      "precio": {
+        "displayName": "Precio",
+        "purpose": "Precio en blanco sobre la chapa; 2.75rem en el cajón grande."
+      },
+      "body": {
+        "displayName": "Texto",
+        "purpose": "Texto corrido con cifras tabulares."
+      },
+      "label": {
+        "displayName": "Rótulo de acción",
+        "purpose": "Tiradores, botones, enlaces de acción y encabezados del pie, en mayúsculas."
+      },
+      "ref": {
+        "displayName": "REF estarcida",
+        "purpose": "Solo referencias de almacén y lema del logo."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cajon",
+        "value": "0 2px 3px rgba(28,42,36,.25), 0 8px 18px -8px rgba(28,42,36,.45)",
+        "purpose": "Reposo de cajones, cajones-sección y frente de profesionales."
+      },
+      {
+        "name": "cajon-levantado",
+        "value": "0 3px 4px rgba(28,42,36,.25), 0 14px 22px -10px rgba(28,42,36,.55)",
+        "purpose": "Hover del cajón-sección con translateY(-2px)."
+      },
+      {
+        "name": "hueco",
+        "value": "inset 0 6px 8px -4px rgba(28,42,36,.45)",
+        "purpose": "Interior hundido del cajón."
+      },
+      {
+        "name": "portaetiquetas",
+        "value": "0 0 0 1px #8F968F, inset 0 1px 2px rgba(28,42,36,.18)",
+        "purpose": "Marco de aluminio encastrado."
+      },
+      {
+        "name": "tirador",
+        "value": "0 1px 2px rgba(0,0,0,.3), 0 4px 8px -4px rgba(0,0,0,.4)",
+        "purpose": "Relieve del botón amarillo; se reduce al pulsar."
+      },
+      {
+        "name": "barra",
+        "value": "0 6px 14px -6px rgba(28,42,36,.5)",
+        "purpose": "Barra de cabecera sobre la cajonera."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Curva única del mueble: hover de cajones, cierre del cajón, trazo del rotulador."
+      },
+      {
+        "name": "cerrar-cajon",
+        "value": "420ms; scaleY(.18) y brightness(.7) al 35 %",
+        "purpose": "Interacción firma al añadir al carrito."
+      },
+      {
+        "name": "trazo-rotulador",
+        "value": "stroke-dashoffset 500ms, retardo 180ms",
+        "purpose": "Marca de añadido bajo la etiqueta."
+      },
+      {
+        "name": "estado-rapido",
+        "value": "120–150ms",
+        "purpose": "Hover y pulsación de tiradores y botones."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Con prefers-reduced-motion todo es instantáneo."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "cajonera-una-columna",
+        "value": "1180px"
+      },
+      {
+        "name": "movil",
+        "value": "860px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tirador",
+      "kind": "button",
+      "refersTo": "tirador",
+      "description": "Botón amarillo «Añadir al carrito» de cada cajón; se pulsa hacia dentro.",
+      "html": "<button class=\"ds-tirador\">Añadir al carrito</button> <button class=\"ds-tirador\" disabled>Sin existencias</button>",
+      "css": ".ds-tirador{height:40px;padding:0 14px;border:1px solid var(--pegatina-osc,#D9A90F);border-radius:4px;background:linear-gradient(180deg,#FFD54D,#F4C531);color:#1C2A24;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:.9375rem;line-height:1;letter-spacing:.04em;cursor:pointer;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.3),0 4px 8px -4px rgba(0,0,0,.4);transition:transform .12s,box-shadow .12s,background-color .12s}.ds-tirador:hover{background:#FFDB5E}.ds-tirador:active{transform:translateY(1px);box-shadow:0 1px 1px rgba(0,0,0,.3)}.ds-tirador:focus-visible{outline:3px solid #F4C531;outline-offset:2px}.ds-tirador:disabled{background:#8E9993;border-color:#75807A;color:#1C2A24;cursor:not-allowed;box-shadow:none}"
+    },
+    {
+      "name": "Botón de chapa",
+      "kind": "button",
+      "refersTo": "boton-chapa",
+      "description": "Llamada amarilla fuera de la cajonera (cuenta profesional).",
+      "html": "<a class=\"ds-boton-chapa\" href=\"#\">Abrir cuenta profesional</a>",
+      "css": ".ds-boton-chapa{display:inline-flex;align-items:center;height:50px;padding:0 24px;border-radius:4px;border:1px solid #D9A90F;background:linear-gradient(180deg,#FFD54D,#F4C531);color:#1C2A24;text-decoration:none;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.125rem;line-height:1;letter-spacing:.04em;box-shadow:0 2px 3px rgba(28,42,36,.3),0 8px 14px -8px rgba(28,42,36,.6);transition:transform .2s cubic-bezier(.16,1,.3,1)}.ds-boton-chapa:hover{transform:translateY(-1px);background:#FFDB5E}.ds-boton-chapa:focus-visible{outline:3px solid #F4C531;outline-offset:2px}"
+    },
+    {
+      "name": "Buscador",
+      "kind": "input",
+      "refersTo": "buscador-campo",
+      "description": "Campo cartulina unido a un botón amarillo con lupa.",
+      "html": "<form class=\"ds-buscador\" onsubmit=\"return false\"><input type=\"search\" placeholder=\"Taladro, tacos del 8, silicona…\" aria-label=\"Buscar\"><button type=\"submit\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"M15.5 15.5L21 21\"/></svg>Buscar</button></form>",
+      "css": ".ds-buscador{display:flex;height:50px;max-width:560px;padding:12px;background:#2E4B3F}.ds-buscador input{flex:1;min-width:0;border:2px solid #1C2A24;border-right:0;border-radius:4px 0 0 4px;padding:0 16px;font:400 1.0625rem 'Barlow',system-ui,sans-serif;color:#1C2A24;background:#FBFBF7}.ds-buscador input::placeholder{color:#66716B}.ds-buscador input:focus{outline:none;box-shadow:inset 0 0 0 2px #F4C531}.ds-buscador button{display:flex;align-items:center;gap:8px;padding:0 20px;border:2px solid #1C2A24;border-radius:0 4px 4px 0;background:#F4C531;color:#1C2A24;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.0625rem;letter-spacing:.03em;cursor:pointer;transition:background-color .15s}.ds-buscador button:hover{background:#FFD650}.ds-buscador button:focus-visible{outline:3px solid #F4C531;outline-offset:2px}"
+    },
+    {
+      "name": "Cajón de oferta",
+      "kind": "card",
+      "refersTo": "cajon",
+      "description": "Producto en su cajón: hueco con dibujo, pegatina, portaetiquetas con REF y fila de compra.",
+      "html": "<article class=\"ds-cajon\"><div class=\"ds-cajon-hueco\"><svg viewBox=\"0 0 160 120\" width=\"110\"><path d=\"M44 34h66a14 14 0 0 1 14 14v6a6 6 0 0 1-6 6H84l-8 34H52l6-34H44a8 8 0 0 1-8-8V42a8 8 0 0 1 8-8z\" fill=\"rgba(244,197,49,.55)\" stroke=\"#1C2A24\" stroke-width=\"3\" stroke-linejoin=\"round\"/><rect x=\"44\" y=\"92\" width=\"44\" height=\"18\" rx=\"4\" fill=\"rgba(46,75,63,.18)\" stroke=\"#1C2A24\" stroke-width=\"3\"/></svg><span class=\"ds-pegatina\">−26 %</span></div><div class=\"ds-cajon-frente\"><div class=\"ds-portaetiquetas\"><h3 class=\"ds-etiqueta\">Silicona sanitaria blanca 280 ml</h3><span class=\"ds-ref\">REF 06-207</span><svg class=\"ds-marca\" viewBox=\"0 0 200 12\" preserveAspectRatio=\"none\"><path d=\"M3 8 C 50 4, 120 10, 197 5\"/></svg></div><div class=\"ds-cajon-compra\"><p class=\"ds-precio\">3,40 € <s>4,60 €</s></p><button class=\"ds-cajon-tirador\">Añadir al carrito</button></div></div></article>",
+      "css": ".ds-cajon{position:relative;display:flex;flex-direction:column;width:280px;padding:8px;border:1px solid #1C2A24;border-radius:4px;background:linear-gradient(180deg,#355648,#2E4B3F 30%,#264036);box-shadow:0 2px 3px rgba(28,42,36,.25),0 8px 18px -8px rgba(28,42,36,.45)}.ds-cajon-hueco{position:relative;min-height:120px;display:grid;place-items:center;background:linear-gradient(180deg,#E9ECE6,#F6F7F2 30%);border-radius:2px;box-shadow:inset 0 6px 8px -4px rgba(28,42,36,.45)}.ds-pegatina{position:absolute;top:10px;right:10px;padding:6px 10px 5px;background:#F4C531;color:#1C2A24;font:700 1.25rem/1 'Barlow Condensed',sans-serif;transform:rotate(4deg);border-radius:2px;box-shadow:0 2px 4px rgba(28,42,36,.3)}.ds-cajon-frente{display:grid;gap:8px;padding-top:8px}.ds-portaetiquetas{position:relative;padding:8px 12px 9px;background:#FBFBF7;border-radius:2px;border:3px solid #C9CDC8;box-shadow:0 0 0 1px #8F968F,inset 0 1px 2px rgba(28,42,36,.18)}.ds-etiqueta{margin:0 0 3px;font:700 1.0625rem/1.15 'Barlow Condensed',sans-serif;color:#1C2A24}.ds-ref{display:block;font:400 .75rem/1.2 'Saira Stencil One','Barlow Condensed',sans-serif;letter-spacing:.08em;color:#4A5650;text-transform:uppercase}.ds-marca{position:absolute;left:10px;bottom:2px;width:calc(100% - 20px);height:10px;overflow:visible}.ds-marca path{fill:none;stroke:#B3261E;stroke-width:3;stroke-linecap:round}.ds-cajon-compra{display:flex;align-items:center;justify-content:space-between;gap:8px}.ds-precio{margin:0;color:#fff;font:700 1.5rem/1 'Barlow Condensed',sans-serif}.ds-precio s{font-size:.9375rem;font-weight:400;color:#C9D4CD}.ds-cajon-tirador{height:40px;padding:0 14px;border:1px solid #D9A90F;border-radius:4px;background:linear-gradient(180deg,#FFD54D,#F4C531);color:#1C2A24;font:700 .9375rem/1 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.3),0 4px 8px -4px rgba(0,0,0,.4)}.ds-cajon-tirador:hover{background:#FFDB5E}.ds-cajon-tirador:active{transform:translateY(1px)}.ds-cajon-tirador:focus-visible{outline:3px solid #F4C531;outline-offset:2px}"
+    },
+    {
+      "name": "Cajón-sección",
+      "kind": "nav",
+      "refersTo": "cajoncito",
+      "description": "Categoría como cajoncito de chapa con portaetiquetas, REF y tirador metálico.",
+      "html": "<a class=\"ds-cajoncito\" href=\"#\"><span class=\"ds-pe\"><span class=\"ds-pe-et\">Tornillería y fijación</span><span class=\"ds-pe-ref\">03 · 6320 ref.</span></span><span class=\"ds-tir\"></span></a>",
+      "css": ".ds-cajoncito{display:flex;align-items:center;gap:12px;width:272px;height:76px;padding:0 14px 0 10px;border:1px solid #1C2A24;border-radius:4px;text-decoration:none;color:#1C2A24;background:linear-gradient(180deg,#3D5F50,#2E4B3F 60%,#264036);box-shadow:0 2px 3px rgba(28,42,36,.25),0 8px 18px -8px rgba(28,42,36,.45);transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1)}.ds-cajoncito:hover{transform:translateY(-2px);box-shadow:0 3px 4px rgba(28,42,36,.25),0 14px 22px -10px rgba(28,42,36,.55)}.ds-cajoncito:focus-visible{outline:3px solid #F4C531;outline-offset:2px}.ds-pe{flex:1;min-width:0;padding:6px 10px 7px;background:#FBFBF7;border-radius:2px;border:3px solid #C9CDC8;box-shadow:0 0 0 1px #8F968F,inset 0 1px 2px rgba(28,42,36,.18)}.ds-pe-et{display:block;font:700 1.1875rem/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ds-pe-ref{display:block;font:400 .75rem/1.2 'Saira Stencil One',sans-serif;letter-spacing:.08em;color:#4A5650;text-transform:uppercase}.ds-tir{flex:none;width:34px;height:12px;border-radius:6px;background:linear-gradient(180deg,#E4E7E2,#9EA5A0);box-shadow:0 2px 2px rgba(0,0,0,.35)}"
+    },
+    {
+      "name": "Barra de cabecera",
+      "kind": "nav",
+      "refersTo": "contador",
+      "description": "Barra de chapa con logo, lema estarcido, cuenta y carrito con contador.",
+      "html": "<header class=\"ds-barra\"><a class=\"ds-logo\" href=\"#\"><span class=\"ds-logo-n\">Tornillo<b>Mayor</b></span><span class=\"ds-logo-l\">Ferretería desde 1987</span></a><nav class=\"ds-cuenta\"><a href=\"#\">Mi cuenta</a><a href=\"#\">Carrito <span class=\"ds-contador\">1</span></a></nav></header>",
+      "css": ".ds-barra{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:14px 24px;color:#fff;background:linear-gradient(180deg,#3D5F50,#2E4B3F 55%);border-bottom:3px solid #1C2A24;box-shadow:0 6px 14px -6px rgba(28,42,36,.5)}.ds-logo{display:grid;text-decoration:none;color:inherit;line-height:1}.ds-logo-n{font:700 2.125rem/1 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:-.01em}.ds-logo-n b{color:#F4C531;margin-left:.18em}.ds-logo-l{font:400 .8125rem/1 'Saira Stencil One',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#C6D2CA;margin-top:6px}.ds-cuenta{display:flex;gap:8px}.ds-cuenta a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:4px;color:#fff;text-decoration:none;font:700 1rem 'Barlow',sans-serif;transition:background-color .15s}.ds-cuenta a:hover{background:rgba(255,255,255,.1)}.ds-cuenta a:focus-visible{outline:3px solid #F4C531;outline-offset:2px}.ds-contador{min-width:26px;height:26px;padding:0 7px;border-radius:13px;display:grid;place-items:center;background:#F4C531;color:#1C2A24;font:700 .875rem/1 'Barlow',sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La cajonera de tornillería",
+    "overview": "La tienda es el mueble metálico del fondo de la ferretería: chapa esmaltada verde, cajones iguales a módulo fijo, un portaetiquetas de aluminio en cada frente con su tarjeta blanca y su referencia estarcida. Todo lo que se puede comprar vive dentro de un cajón; abrirlo es comprar. La página no es una rejilla de tarjetas flotando sobre blanco: es un mueble con estructura, peso y orden de almacén.\n\nLa densidad es la de un mostrador con mucho surtido: cajones apretados a un hueco de 12 px, tipografía condensada en mayúsculas para los rótulos, precios grandes en blanco sobre la chapa. El amarillo aparece como una pegatina de oferta o como el tirador que se agarra, nunca como color de marca extendido. El estado se escribe como se escribiría a mano en el almacén: lo añadido lleva un trazo de rotulador rojo bajo la etiqueta; lo agotado, la etiqueta tachada.\n\nLa profundidad es física y contenida: degradado vertical de esmalte con luz arriba, sombra corta bajo cada cajón, hueco interior con sombra interna. Las ilustraciones de producto son dibujos de catálogo de papel, a trazo de tinta con aguada suave, nunca fotos recortadas ni 3D.",
+    "keyCharacteristics": [
+      "Chapa verde esmaltada como estructura de toda la página; gris cajonera de fondo.",
+      "Rejilla entera por módulo (12 px): cajones iguales, un cajón grande de 2×2 para la oferta estrella.",
+      "Portaetiquetas de aluminio con tarjeta blanca y REF estarcida en cada frente.",
+      "Amarillo pegatina reservado a ofertas y acción.",
+      "Estado como marca: rotulador rojo para añadido, tachado para agotado.",
+      "Dibujos de catálogo a trazo con aguada; iconos de trazo único 24×24 a 2 px."
+    ],
+    "rules": [
+      {
+        "name": "The Pegatina Rule",
+        "body": "El amarillo solo marca oferta o acción (pegatina de descuento, tirador, buscador, contador, foco). Nunca un fondo de sección ni un titular.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rotulador Rule",
+        "body": "El rojo es tinta de rotulador y solo dice «esto ya está en tu carrito». Si algo rojo no es un trazo a mano sobre una etiqueta, sobra.",
+        "section": "colors"
+      },
+      {
+        "name": "The Esmalte Rule",
+        "body": "La chapa nunca es plana: siempre degradado vertical con luz arriba (chapa-luz → chapa → chapa-fondo) y canto de chapa-osc.",
+        "section": "colors"
+      },
+      {
+        "name": "The REF Rule",
+        "body": "Cada etiqueta de cajón lleva su referencia estarcida debajo. La estarcida solo escribe referencias y el lema; nunca titulares ni cuerpo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rótulo Rule",
+        "body": "Los rótulos van en Barlow Condensed 700. Las mayúsculas son para rótulos de mueble y acciones; los nombres de producto van en caja normal.",
+        "section": "typography"
+      },
+      {
+        "name": "The Módulo Rule",
+        "body": "Todo lo que está en la cajonera se alinea a una rejilla entera: cajones iguales, hueco de 12 px, y solo el cajón estrella rompe el tamaño, y lo hace por múltiplos (2×2).",
+        "section": "layout"
+      },
+      {
+        "name": "The Luz Cenital Rule",
+        "body": "La luz viene siempre de arriba: degradados claros arriba, sombras hacia abajo, sombras internas desde el borde superior del hueco.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** meter todo producto y toda categoría en un cajón de chapa con su portaetiquetas y su REF estarcida.",
+      "**Do** separar cajones exactamente por el módulo de 12 px (8 px en móvil) y hacer crecer el cajón destacado solo por múltiplos de la rejilla.",
+      "**Do** pintar la chapa con degradado vertical luz arriba y canto chapa-osc.",
+      "**Do** usar dibujos de catálogo a trazo de tinta (3 px) con aguada translúcida, e iconos de trazo único 24×24 a 2 px.",
+      "**Do** expresar el estado con marcas físicas: rotulador rojo para añadido, tachado para agotado."
+    ],
+    "donts": [
+      "**Don't** usar el amarillo pegatina como fondo de sección, titular o adorno; solo oferta y acción.",
+      "**Don't** usar el rojo rotulador para errores, precios o descuentos.",
+      "**Don't** escribir titulares o cuerpo en Saira Stencil One; es solo para REF y lema.",
+      "**Don't** montar la portada como carrusel con rejilla de tarjetas blancas flotantes sobre blanco.",
+      "**Don't** sustituir los dibujos de catálogo por fotos recortadas o renders 3D."
+    ]
+  }
+}

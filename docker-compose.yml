@@ -1,0 +1,118 @@
+# Tornillo Mayor · tienda online
+# Solo para la red local del aula. Nunca publicar en Internet.
+name: tornillo-mayor
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: tm-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-raiz-tornillo}
+      MYSQL_DATABASE: ${DB_NAME:-tornillo_mayor}
+      MYSQL_USER: ${DB_USER:-tienda}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-tienda}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    ports:
+      - "127.0.0.1:${DB_HOST_PORT:-3308}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-raiz-tornillo}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  backend:
+    build: ./backend
+    container_name: tm-backend
+    restart: unless-stopped
+    environment:
+      PORT: 4000
+      NODE_OPTIONS: --openssl-legacy-provider
+      CARD_KEY: ${CARD_KEY:-tornillo}
+      JWT_SECRET: ${JWT_SECRET:-tornillo-mayor-firma-api}
+      COOKIE_SAMESITE: ${COOKIE_SAMESITE:-Lax}
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-tornillo_mayor}
+      DB_USER: ${DB_USER:-tienda}
+      DB_PASSWORD: ${DB_PASSWORD:-tienda}
+    # El contenedor corre como root (sin usuario sin privilegios).
+    user: "0:0"
+    volumes:
+      - uploads:/app/uploads
+    depends_on:
+      mysql:
+        condition: service_healthy
+    mem_limit: 512m
+    cpus: 1.0
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  frontend:
+    build: ./frontend
+    container_name: tm-frontend
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:${APP_HOST_PORT:-8085}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  # Sidecar de diagnóstico: vigila que la API y la base de datos respondan.
+  diagnostico:
+    image: alpine:3.20
+    container_name: tm-diagnostico
+    restart: unless-stopped
+    user: "0:0"
+    privileged: true
+    pid: "service:backend"
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+    command: >
+      sh -c "apk add --no-cache curl >/dev/null 2>&1;
+             while true; do
+               curl -s http://backend:4000/api/health >/dev/null 2>&1 || echo 'API sin respuesta';
+               sleep 30;
+             done"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  # Panel interno de ejemplo: NO publica puertos, solo accesible desde la red de Docker.
+  # Simula una intranet con imágenes que el navegador del alumno no puede alcanzar,
+  # pero sí el backend (por eso el SSRF del avatar puede traerlas).
+  intranet:
+    image: nginx:alpine
+    container_name: tm-intranet
+    restart: unless-stopped
+    volumes:
+      - ./interno:/usr/share/nginx/html:ro
+
+  # phpMyAdmin con AUTOLOGIN (sin pantalla de login): PMA_USER/PMA_PASSWORD activan
+  # la autenticación por config y entra directo como root. Solo para el aula.
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: tm-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_ROOT_PASSWORD:-raiz-tornillo}
+      UPLOAD_LIMIT: 64M
+    ports:
+      - "0.0.0.0:${PMA_HOST_PORT:-8086}:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  db_data:
+  uploads:

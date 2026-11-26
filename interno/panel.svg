@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="420" fill="#0f1b2d"/>
+  <rect x="0" y="0" width="640" height="54" fill="#13294b"/>
+  <text x="20" y="35" fill="#8fd3ff" font-size="22" font-weight="bold">INTRANET · Panel de operaciones</text>
+  <text x="20" y="90" fill="#ff6b6b" font-size="15" font-weight="bold">⚠ SOLO RED INTERNA · NO EXPONER</text>
+  <text x="20" y="140" fill="#e6edf3" font-size="16">Pedidos hoy: 128     Facturación: 9.842,50 €</text>
+  <text x="20" y="172" fill="#e6edf3" font-size="16">Stock crítico: 7 referencias</text>
+  <text x="20" y="214" fill="#9aa7b4" font-size="14">Token interno de métricas:</text>
+  <text x="20" y="240" fill="#ffd166" font-size="15" font-family="monospace">tm-internal-7f3a9c21e8b04d55</text>
+  <text x="20" y="282" fill="#9aa7b4" font-size="14">Host backup: 10.10.0.14 · usuario: respaldo</text>
+  <text x="20" y="372" fill="#5a6b7b" font-size="13">tornillo-mayor · servicio "intranet" · sin salida a Internet</text>
+</svg>

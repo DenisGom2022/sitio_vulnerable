@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" font-family="Arial">
+  <rect width="600" height="360" fill="#1a1a1a"/>
+  <text x="20" y="40" fill="#00e676" font-size="20" font-weight="bold">Mapa de red interna</text>
+  <text x="20" y="90" fill="#ddd" font-size="15" font-family="monospace">backend:4000   API principal</text>
+  <text x="20" y="120" fill="#ddd" font-size="15" font-family="monospace">mysql:3306     Base de datos</text>
+  <text x="20" y="150" fill="#ddd" font-size="15" font-family="monospace">intranet:80    Panel interno (este)</text>
+  <text x="20" y="180" fill="#ddd" font-size="15" font-family="monospace">10.10.0.14     Servidor de backups</text>
+  <text x="20" y="330" fill="#777" font-size="13">Accesible solo desde la red del contenedor</text>
+</svg>

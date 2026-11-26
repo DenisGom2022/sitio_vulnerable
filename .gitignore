@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.impeccable/review/
+
+# Claude Code
+.claude/settings.local.json
+CLAUDE.local.md
+DESIGN.md
